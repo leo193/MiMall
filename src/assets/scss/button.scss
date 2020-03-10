@@ -1,0 +1,33 @@
+.btn{
+    display:inline-block;
+    width:110px;
+    line-height: 30px;
+    text-align: center;
+    background-color: $colorA;
+    color:$colorJ;
+    border:none;
+    cursor: pointer;
+}
+.btn-default{
+    background-color: #B0B0B0;
+    color:$colorG;
+    border:1px solid #B0B0B0;
+}
+.btn-large{
+    width:202px;
+    line-height: 50px;
+    font-size:$fontH;
+}
+.btn-huge{
+    width:350px;
+    line-height: 50px;
+    font-size:$fontI;
+}
+.btn-group{
+    .btn{
+        margin-right: 20px;
+        &:last-child{
+            margin-right:0;
+        }
+    }
+}

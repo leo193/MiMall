@@ -6,10 +6,12 @@ module.exports = {
             '/api':{
                 target:'http://mall-pre.springboot.cn',
                 changeOrigin:true,
-                pathRewrite:{
-                    '/api':''
-                }
+                pathRewrite: {'^/api' : ''}
             }
         }
+    },
+    productionSourceMap:false,
+    chainWebpack:(config)=>{
+        config.plugins.delete('prefetch');
     }
 }
